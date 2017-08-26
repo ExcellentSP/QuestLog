@@ -12,6 +12,10 @@
 
         <!-- Styles -->
         <style>
+            @font-face {
+                font-family: "QuestLog";
+                src: url(fonts/IMFeENrm28P.ttf) format("truetype");
+            }
             html, body {
                 background-color: #fff;
                 color: #636b6f;
@@ -47,6 +51,7 @@
 
             .title {
                 font-size: 84px;
+                font-family:'QuestLog';
             }
 
             .links > a {
@@ -79,15 +84,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
-                </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                    {{ config('app.name') }}
                 </div>
             </div>
         </div>
